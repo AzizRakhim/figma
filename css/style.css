@@ -32,7 +32,7 @@ body{
 }
 
 .container{
-    width: 1280px;
+    width: 1260px;
     padding: 0 10px;
 }
 
@@ -40,6 +40,7 @@ body{
     background-color: #2c2c2c;
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 .header-intro{
@@ -155,17 +156,18 @@ body{
 /* hero-intro start */
 
 .hero-intro{
-    padding-top: 60px;
+    padding-top: 47px;
 }
 
 .hero-function{
     width: 224px;
     border-right: 1px solid #000;
+    position: fixed;
 }
 
 .recent{
     width: 224px;
-    padding: 0px 8px;
+    padding: 15px 8px;
 }
 
 .function-text{
@@ -313,6 +315,14 @@ body{
 
 .hero-main{
     width: 1035px;
+    margin-left: 224px;
+}
+
+.hero-beginning{
+    background-color: #fff;
+    width: 1010px;
+    position: fixed;
+    z-index: 9;
 }
 
 .hero-title{
@@ -326,9 +336,13 @@ body{
 
 .hero-item{
     width: 309px;
-    padding: 10px;
+    padding: 20px 15px;
     border: 1px solid #000;
     border-radius: 5px;
+}
+
+.scroll-part{
+    margin-top: 200px;
 }
 
 .explore-card{
