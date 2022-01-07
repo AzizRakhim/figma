@@ -31,11 +31,6 @@ body{
     font-family: 'Inter', 'Arial', sans-serif;
 }
 
-.container{
-    width: 1260px;
-    padding: 0 10px;
-}
-
 .site-header{
     background-color: #2c2c2c;
     position: fixed;
@@ -45,10 +40,21 @@ body{
 
 .header-intro{
     border-right: 1px solid rgba(0,0,0,.2);
+    height: 46px;
 }
 
 .header-intro:hover{
     background-color: #1a1919;
+}
+
+.header-intro:hover .email{
+    color: #fff;
+}
+
+.header-intro:hover .bx-chevron-down{
+    color: #fff;
+    position: relative;
+    top: 3px;
 }
 
 .logo{
@@ -126,8 +132,17 @@ body{
 
 .bell{
     width: 43px;
+    height: 46px;
     border: none;
     background-color: transparent;
+}
+
+.bell:hover{
+    background-color: #000;
+}
+
+.bell:hover .bx-bell{
+    color: #fff;
 }
 
 .bx-bell{
@@ -138,8 +153,19 @@ body{
 .btn{
     padding: 0 0px 0 12px;
     width: 70px;
+    height: 46px;
     border: none;
     background-color: transparent;
+}
+
+.btn:hover{
+    background-color: #000;
+}
+
+.btn:hover .bx-chevron-down{
+    color: #fff;
+    position: relative;
+    top: 4px;
 }
 
 .letter{
@@ -341,8 +367,12 @@ body{
     border-radius: 5px;
 }
 
+.hero-item:hover{
+    background-color: #f0f0f0;
+}
+
 .scroll-part{
-    margin-top: 200px;
+    margin-top: 220px;
 }
 
 .explore-card{
