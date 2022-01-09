@@ -40,7 +40,8 @@ body{
 
 .header-intro{
     border-right: 1px solid rgba(0,0,0,.2);
-    height: 46px;
+    height: 48px;
+    width: 224px;
 }
 
 .header-intro:hover{
@@ -58,13 +59,15 @@ body{
 }
 
 .logo{
-    margin: 0 19px 0 9px;
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
 }
 
 .header-email{
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
+    width: 142px;
 }
 
 .name{
@@ -81,7 +84,7 @@ body{
     color: #fff6;
     font-size: 9px;
     line-height: 16px;
-    letter-spacing: .146px;
+    letter-spacing: 0.146px;
     display: inline-block;
 }
 
@@ -92,10 +95,14 @@ body{
 }
 
 .header-search{
-    margin-left: 16px;
     flex-grow: 1;
     margin-top: 4px;
     margin-bottom: 4px;
+}
+
+.serach-control{
+    width: 340px;
+    padding: 0 4px 0 16px;
 }
 
 
@@ -181,66 +188,72 @@ body{
 /* header end */
 /* hero-intro start */
 
-.hero-intro{
-    padding-top: 47px;
-}
-
 .hero-function{
     width: 224px;
-    border-right: 1px solid #000;
+    height: 100%;
+    border-right: 1px solid #e5e5e5;
     position: fixed;
+    top: 60px;
 }
 
 .recent{
-    width: 224px;
-    padding: 15px 8px;
+    width: 100%;
+    padding: 0 8px;
+    height: 32px;
+    background-color: #daebf7;
 }
 
 .function-text{
     font-size: 11px;
     line-height: 16px;
     letter-spacing: .053px;
+    padding-left: 8px;
 }
 
 .bx-time{
     font-size: 20px;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .draft{
-    width: 224px;
-    padding: 15px 8px;
-    border-bottom: 1px solid #000;
+    padding: 0 8px;
+    height: 36px;
+}
+
+.line{
+    display: block;
+    margin: 12px 16px;
+    height: 1px;
+    background-color: #0000001a;
 }
 
 .draft-plus .bx-plus{
     opacity: 0;
 }
 
-.draft:hover .bx-plus{
+.draft-intro:hover .bx-plus{
     opacity: 1;
 }
 
 .bx-file-blank{
     font-size: 20px;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .community{
-    width: 224px;
-    padding: 15px 8px;
-    border-bottom: 1px solid #000;
-    padding-bottom: 15px;
+    width: 100%;
+    height: 32px;
+    padding: 0 8px;
+    
 }
 
 .community:hover .bx-right-arrow-alt{
-    position: relative;
-    right: -10px;
+    transform: translateX(10px);
 }
 
 .bx-globe{
     font-size: 20px;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .beta{
@@ -258,39 +271,45 @@ body{
 
 .bx-right-arrow-alt{
     margin-left: 40px;
-}
-
-.upgrade{
-    width: 224px;
-    padding: 15px 8px;
-    border-bottom: 1px solid #000;
+    transition: all 0.5s ease;
 }
 
 .upgrade-part{
+    width: 100%;
+    padding: 0 8px;
     margin-bottom: 10px;
 }
 
 .bx-up-arrow-circle{
     display: inline-block;
     font-size: 20px;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .upgrade-btn{
-    margin-left: 30px;
     font-size: 11px;
     line-height: 16px;
+    height: 32px;
     letter-spacing: .053px;
-    padding: 8px;
+    padding: 0 11px;
     background-color: #fff;
     border-radius: 5px;
     border: 1px solid #000;
+    position: relative;
+    left: 20%;
+ 
 }
 
-.team{
-    width: 224px;
-    padding: 15px 8px;
-    border-bottom: 1px solid #000;
+.plus-one{
+    width: 100%;
+    padding: 0 8px 0 20px;
+    height: 32px;
+}
+
+.plus-two{
+    width: 100%;
+    padding: 0 8px 0 35px;
+    height: 32px;
 }
 
 .plus-one .bx-plus{
@@ -319,19 +338,25 @@ body{
 .team-manager::before{
     content: '';
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: purple;
+    width: 15px;
+    height: 15px;
+    background-color: #C7B9FF;
     margin-right: 10px;
+    border-radius: 3px;
 }
 
 .team .function-text{
-    padding: 8px 20px;
+    padding: 0 8px;
 }
 
 .new-team{
-    width: 224px;
-    padding: 15px 6px;
+    width: 100%;
+    padding: 0 8px;
+}
+
+.new-team .bx-plus{
+    font-size: 15px;
+    margin-left: 10px;
 }
 
 .bx-plus{
@@ -339,63 +364,150 @@ body{
     margin-right: 10px;
 }
 
-.hero-main{
-    width: 1035px;
-    margin-left: 224px;
-}
+/* .hero-main{
+    width: 1055px;
+    
+} */
 
 .hero-beginning{
     background-color: #fff;
-    width: 1010px;
+    width: 1055px;
     position: fixed;
     z-index: 9;
+    transform: translate(224px, 48px);
+}
+
+.title-div{
+    min-width: 100%;
+    padding: 0 32px;
+    border: 1px solid #0000001a;
 }
 
 .hero-title{
-    padding: 25px;
+    height: 50px;
+    width: 112px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -.041px;
+    
 }
+
 
 .hero-list{
     list-style: none;
-    padding: 24px 32px;
+    padding: 20px 32px;
 }
 
 .hero-item{
     width: 309px;
-    padding: 20px 15px;
-    border: 1px solid #000;
-    border-radius: 5px;
+    padding: 20px 12px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.item-text{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: .053px;
+    color: #7d7d7d;
 }
 
 .hero-item:hover{
     background-color: #f0f0f0;
 }
 
+.hero-item-img-link{
+    text-decoration: none;
+}
+
+.hero-item-img{
+    margin-right: 12px;
+}
+
+.hero-item-img-text{
+    width: 207px;
+}
+
+.item-title{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -.041px;
+    color: #333;
+}
+
+.item-btn .bx-plus{
+    font-size: 20px;
+    color: #333;
+}
+
 .scroll-part{
-    margin-top: 220px;
+    position: absolute;
+    top: 224px;
+    left: 224px;
 }
 
 .explore-card{
-    margin: 0 32px 16px;
+    width: 991px;
+    margin: 0 0 16px 32px;
     padding: 16px 24px 24px;
     background-color: #f0f0f0;
     border-radius: 6px;
 }
 
-.explore-title{
+.explore-list-height{
+    height: 32px;
     margin-bottom: 16px;
+}
+
+.explore-title{
+    /* margin-bottom: 16px; */
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -.041px;
+    color: #333;
+}
+
+.see-all{
+    display: inline-block;
+    font-weight: 500;
+    color: #18a0fb;
+    padding-right: 16px;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: .053px;
+}
+
+.wall{
+    display: block;
+    width: 1px;
+    height: 32px;
+    border: none;
+    background-color: #0000001a;
+}
+
+.exit{
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+}
+
+.bx-x{
+    font-size: 20px;
+    color: #000;
 }
 
 .explore-list{
     list-style: none;
 }
 
-.explore-item{
-    margin-bottom: 8px;
-}
-
 .explore-img{
     border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 .explore-text{
@@ -403,4 +515,5 @@ body{
     line-height: 24px;
     letter-spacing: -.041px;
     font-weight: 500;
+    color: #333;
 }
