@@ -188,12 +188,18 @@ body{
 /* header end */
 /* hero-intro start */
 
+.hero-intro{
+    width: 100%;
+}
+
 .hero-function{
     width: 224px;
     height: 100%;
     border-right: 1px solid #e5e5e5;
     position: fixed;
     top: 60px;
+    left: 0;
+    background-color: #fff;
 }
 
 .recent{
@@ -364,14 +370,14 @@ body{
     margin-right: 10px;
 }
 
-/* .hero-main{
-    width: 1055px;
-    
-} */
+.hero-main{
+    position: absolute;
+    width: 80%;
+}
 
 .hero-beginning{
     background-color: #fff;
-    width: 83%;
+    width: 100%;
     position: fixed;
     z-index: 9;
     transform: translate(224px, 48px);
@@ -385,7 +391,6 @@ body{
 
 .hero-title{
     height: 50px;
-    width: 112px;
     font-weight: 500;
     font-size: 13px;
     line-height: 24px;
@@ -452,7 +457,7 @@ body{
 }
 
 .scroll-part{
-    width: 80%;
+    width: 100%;
     position: absolute;
     top: 230px;
     left: 224px;
@@ -461,7 +466,6 @@ body{
 .last{
     margin-left: 32px;
     height: 24px;
-    width: 97%;
 }
 
 .last-real-text{
@@ -511,10 +515,6 @@ body{
     border: 1px solid #ccc;
     border-radius: 5px;
     padding-bottom: 10px; 
-}
-
-.untitled:not(:last-child){
-    margin-right: 28px;
 }
 
 .title-text{
